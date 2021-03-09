@@ -5,8 +5,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="packages/fontawesome/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<!--    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Grid, БЭМ</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
             <nav class="header__main-menu main-menu">
                 <ul class="main-menu__list">
                     <li class="main-menu__item">
-                        <a href="#" class="main-menu__link">Home</a>
+                        <a href="#" class="main-menu__link main-menu__link_active">Home</a>
                     <li class="main-menu__item">
                         <a href="#" class="main-menu__link">Blog</a>
                     </li>
@@ -36,28 +37,132 @@
                 </ul>
             </nav>
             <ul class="header__social social">
-                <li class="social__link">
-                    <i class="fab fa-facebook-f"></i>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <i class="fab fa-facebook-f social__icon"></i>
+                    </a>
                 </li>
-                <li class="social__link">
-                    <i class="fab fa-telegram-plane"></i>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <i class="fab fa-telegram-plane social__icon"></i>
+                    </a>
                 </li>
-                <li class="social__link">
-                    <i class="fab fa-twitter"></i>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <i class="fab fa-twitter social__icon"></i>
+                    </a>
                 </li>
-                <li class="social__link">
-                    <i class="fab fa-medium-m"></i>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <i class="fab fa-medium-m social__icon"></i>
+                    </a>
                 </li>
 
             </ul>
-            <a href="#" class="header_button button button-blue">
+            <a href="#" class="header__button button button_light-blue">
                 Get started
             </a>
         </header>
 
-        <main class="main">
+        <section class="main">
+            <section class="slider">
+                <div class="slider__slide slider__slide_1 slide">
+                    <p class="slide__text text">PLAN YOUR LIFE</p>
+                    <h2 class="slide__title title">Increase your
+                        <span class="title_bold">productivity</span>
+                    </h2>
+                    <p class="slide__content content">
+                        Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
+                        Usu atqui laudem an, insolens gubergren similique est cu.
+                        Et vel modus congue vituperata.
+                    </p>
 
-        </main>
+                    <a href="#" class="slider__button button button_round">
+                        <i class="fas fa-caret-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="slider__pagination pagination">
+                    <div class="pagination__dot pagination__dot_active"></div>
+                    <div class="pagination__dot"></div>
+                    <div class="pagination__dot"></div>
+
+                </div>
+            </section>
+            <section class="customers">
+                <div class="customers__item customers__item_1"></div>
+                <div class="customers__item customers__item_2"></div>
+                <div class="customers__item customers__item_3"></div>
+                <div class="customers__item customers__item_4"></div>
+                <div class="customers__item customers__item_5"></div>
+            </section>
+            <section class="plan">
+                <p class="plan__text text">DESKTOP AND MOBILE APP</p>
+                <h2 class="plan__title title">
+                    <span class="plan__title title_bold">
+                        Plan
+                    </span>
+                     and
+                    <span class="plan__title title_bold">
+                        manage
+                    </span>
+                </h2>
+                <p class="plan__content content">
+                    Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
+                    Usu atqui laudem an, insolens gubergren similique est cu.
+                    Et vel modus congue vituperata. Solum patrioque no sea.
+                    Mea ex malis mollis oporteat. Eum an expetenda consequat.
+                </p>
+                <a href="#" class="plan__button button button_blue">View video
+                    <i class="fas fa-caret-right"></i>
+                </a><a href="#" class="plan__button button button_gray">See features
+                </a>
+            </section>
+
+            <section class="about">
+                <p class="about__text text">
+                    ABOUT US
+                </p>
+                <h2 class="about__title title title_bold">
+                    Read about our app
+                </h2>
+                <div class="about__features features">
+                    <div class="features__item">
+                        <div class="features__img"><i class="fas fa-home"></i></div>
+                        <h3 class="features__title">Overview</h3>
+                        <p class="features__content">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.</p>
+                    </div>
+                    <div class="features__line"></div>
+                    <div class="features__item">
+                        <div class="features__img"><i class="far fa-folder-open"></i></div>
+                        <h3 class="features__title">Files</h3>
+                        <p class="features__content">No vim nulla vitae intellegat. Ei enim error ius, solet atomorum conceptam ex has.</p>
+                    </div>
+                    <div class="features__line"></div>
+                    <div class="features__item">
+                        <div class="features__img"><i class="far fa-comment-alt"></i></div>
+                        <h3 class="features__title">Meeting chats</h3>
+                        <p class="features__content">Vim ne tacimates neglegentur. Erat diceret omittam at est.</p>
+                    </div>
+                    <div class="features__line"></div>
+                    <div class="features__item">
+                        <div class="features__img"><i class="fas fa-upload"></i></div>
+                        <h3 class="features__title">Save events</h3>
+                        <p class="features__content">Nisl idque mel ea, nominati voluptatum.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about__buttons">
+                    <a href="#" class="about_button button button_red">Read more</a>
+                    <div class="about__line"></div>
+                    <span class="about__or">OR</span>
+                    <div class="about__line"></div>
+                    <a href="#" class="about_button button button_light-blue">Get started</a>
+                </div>
+            </section>
+        </section>
 
         <footer class="footer"></footer>
     </div>
